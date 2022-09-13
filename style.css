@@ -8,6 +8,25 @@
 }
 
 body {
-  background-color: #222;
+  background: #222;
   color: #fff;
+}
+
+.glitch {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50);
+  font-size: 100px;
+  letter-spacing: 8px;
+  cursor: pointer;
+}
+
+.glitch::before,
+.glitch::after {
+  content: 'GLITCH';
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
